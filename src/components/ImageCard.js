@@ -6,7 +6,7 @@ const FoodImages = ImportAllImages(require.context('../images/FoodImages', false
 
 const ImageCard = () => {
   return (
-    <div className='grid grid-cols-3 gap-4 p-6'>
+    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-6'>
         {FoodImages.map((image, index) => (
             <div key={index} className="relative w-full h-80 overflow-hidden rounded-lg hover:shadow-lg transition duration-300 ease-in-out">
                 <img src={image} alt={`Food ${index}`} className="absolute inset-0 w-full h-full object-cover object-center transform hover:scale-105 transition duration-300 ease-in-out" />
