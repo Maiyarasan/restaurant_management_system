@@ -1,23 +1,28 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <div className='flex justify-end space-x-4 mr-20 m-4 text-2xl font-bold  '>
-    
-      <li className='list-none cursor-pointer hover:bg-blue-300 hover:text-white hover:scale-105 transform transition duration-150 ease-in-out rounded w-auto h-auto px-3 py-2'>
-      <Link to="/"> Home </Link> </li>
-      <li className='list-none cursor-pointer hover:bg-blue-300 hover:text-white hover:scale-105 transform transition duration-150 ease-in-out rounded w-auto h-auto px-3 py-2'>
-      <Link to="/menu"> Menu </Link> </li>
-      <li className='list-none cursor-pointer hover:bg-blue-300 hover:text-white hover:scale-105 transform transition duration-150 ease-in-out rounded w-auto h-auto px-3 py-2'>
-      <Link to="/"> Contact </Link> </li>
-      <li className='list-none cursor-pointer hover:bg-blue-300 hover:text-white hover:scale-105 transform transition duration-150 ease-in-out rounded w-auto h-auto px-3 py-2'>
-      <Link to="/reviews"> Reviews </Link>  </li>
-      <li className='list-none cursor-pointer hover:bg-blue-300 hover:text-white hover:scale-105 transform transition duration-150 ease-in-out rounded w-auto h-auto px-3 py-2'>
-      <Link to="/about"> About </Link> </li>
-   
-    </div>
-  )
-}
+    <nav className="p-4 ">
+      <ul className="flex justify-center md:justify-end space-x-4 w-full">
+        <li className="list-none">
+          <Link to="/" className="px-3 py-2 rounded text-base font-medium text-blue-700 hover:text-white hover:bg-blue-300 transition duration-150 ease-in-out">Home</Link>
+        </li>
+        <li className="list-none">
+          <Link to="/menu" className="px-3 py-2 rounded text-base font-medium text-blue-700 hover:text-white hover:bg-blue-300 transition duration-150 ease-in-out">Menu</Link>
+        </li>
+        <li className="list-none">
+          <Link to="/" className="px-3 py-2 rounded text-base font-medium text-blue-700 hover:text-white hover:bg-blue-300 transition duration-150 ease-in-out">Contact</Link>
+        </li>
+        <li className="list-none">
+          <Link to="/reviews" className="px-3 py-2 rounded text-base font-medium text-blue-700 hover:text-white hover:bg-blue-300 transition duration-150 ease-in-out">Reviews</Link>
+        </li>
+        <li className="list-none">
+          <Link to="/about" className="px-3 py-2 rounded text-base font-medium text-blue-700 hover:text-white hover:bg-blue-300 transition duration-150 ease-in-out">About</Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
-export default NavBar
+export default NavBar;

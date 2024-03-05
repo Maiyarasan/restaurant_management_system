@@ -3,7 +3,7 @@ import ImageSlider from '../components/ImageSlider';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import ImageCard from '../components/ImageCard';
-import SideBar from '../components/SideBar';
+// import SideBar from '../components/SideBar';
 
 const HomePage = () => {
   return (
@@ -12,7 +12,8 @@ const HomePage = () => {
         <h1 className="text-center text-3xl sm:text-5xl font-bold mt-0.1 text-blue-500 bg-blue-200 p-2 sm:p-5 rounded-2xl shadow-lg hover:bg-blue-100 transition duration-300 ease-in-out">
           WELCOME TO OUR RESTAURANT!
         </h1>
-      <div>
+      <div>  
+        {/* <SideBar /> */}
         <NavBar />
     </div>
         <ImageSlider />
@@ -34,7 +35,7 @@ const HomePage = () => {
         <ImageCard />
       </div>
       <Footer />
-      <SideBar />
+      
     </div>
   );
 };
